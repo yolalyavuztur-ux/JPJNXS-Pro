@@ -148,3 +148,10 @@
     </div>
 </body>
 </html>
+
+<script>
+    document.querySelector('.btn').addEventListener('click', function () {
+        if (window.NativeApp && window.NativeApp.closeWebView)
+            window.NativeApp.closeWebView()
+    })
+</script>
